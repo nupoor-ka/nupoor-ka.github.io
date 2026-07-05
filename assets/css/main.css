@@ -16,9 +16,12 @@
   --accent-hover: #56755A;
   --muted: #767A74;
   --border: rgba(205, 201, 191, 0.75);
-  --white: #ffffff;
+  --white: #FFFFFF;
   --th: #424641;
   --code-bg: rgba(246, 244, 238, 0.9);
+  --white-rgb: rgba(255, 255, 255, 0);
+  --shadow: rgba(0, 0, 0, 0.175);
+  --tab-bg: rgba(230, 235, 237, 0.25);
 }
 
 html, body, div, span, applet, object,
@@ -1057,7 +1060,7 @@ textarea {
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background: #ffffff;
+  background: var(--white);
   border-radius: 0.375em;
   border: none;
   border: solid 1px var(--border);
@@ -1097,7 +1100,7 @@ select {
   text-overflow: ellipsis; }
   select option {
     color: var(--th);
-    background: #ffffff; }
+    background: var(--white); }
   select:focus::-ms-value {
     background-color: transparent; }
   select::-ms-expand {
@@ -1152,7 +1155,7 @@ input[type="radio"] {
       font-weight: 900; }
     input[type="checkbox"] + label:before,
     input[type="radio"] + label:before {
-      background: #ffffff;
+      background: var(--white);
       border-radius: 0.375em;
       border: solid 1px var(--border);
       content: '';
@@ -1169,7 +1172,7 @@ input[type="radio"] {
   input[type="radio"]:checked + label:before {
     background: var(--th);
     border-color: var(--th);
-    color: #ffffff;
+    color: var(--white);
     content: '\f00c'; }
   input[type="checkbox"]:focus + label:before,
   input[type="radio"]:focus + label:before {
@@ -1450,7 +1453,7 @@ ul.pagination {
       text-align: center; }
       ul.pagination li > .page.active {
         background-color:  var(--accent-hover);
-        color: #ffffff !important; }
+        color: var(--white) !important; }
         ul.pagination li > .page.active:hover {
           background-color:  var(--accent); }
         ul.pagination li > .page.active:active {
@@ -1478,7 +1481,7 @@ table {
     border-left: 0;
     border-right: 0; }
     table tbody tr:nth-child(2n + 1) {
-      background-color: rgba(230, 235, 237, 0.25); }
+      background-color: var(--tab-bg); }
   table td {
     padding: 0.75em 0.75em; }
   table th {
@@ -1988,7 +1991,7 @@ button,
     -webkit-transition: left 0.5s ease;
     -ms-transition: left 0.5s ease;
     transition: left 0.5s ease;
-    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: var(--white-rgb);
     border: 0;
     display: block;
     height: 7.5em;
@@ -2048,7 +2051,7 @@ button,
         margin-left: -24em; } }
   @media screen and (max-width: 1280px) {
     #sidebar {
-      box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.175);
+      box-shadow: 0 0 5em 0 var(--shadow);
       height: 100%;
       left: 0;
       position: fixed;
@@ -2088,7 +2091,7 @@ button,
         font-size: 1.1rem;
         z-index: 1; }
       #sidebar .toggle:after {
-        background: rgba(222, 225, 226, 0.75);
+        background: var(--surface-alt);
         border-radius: 0.375em;
         content: '';
         height: 3.5em;
@@ -2116,7 +2119,16 @@ button,
     border-bottom: 0;
     color: inherit;
     font-family: "Roboto Slab", serif;
-    font-size: 1.125em; }
+    font-size: 1.5em;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem; }
+  #header .logo .site-logo {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
   #header .icons {
     text-align: right; }
   @media screen and (max-width: 1680px) {
@@ -2165,7 +2177,7 @@ button,
     flex-shrink: 0;
     display: block;
     margin: 0 0 2em 4em;
-    width: 50%; }
+    width: 28%; }
     #banner .image img {
       height: 100%;
       -moz-object-fit: cover;
@@ -2249,7 +2261,7 @@ button,
       -ms-transition: color 0.2s ease-in-out;
       transition: color 0.2s ease-in-out;
       text-decoration: none;
-      -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+      -webkit-tap-highlight-color: var(--white-rgb);
       position: relative; }
       #menu ul a.opener:before, #menu ul span.opener:before {
         -moz-osx-font-smoothing: grayscale;

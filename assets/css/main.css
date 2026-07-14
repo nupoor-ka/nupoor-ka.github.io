@@ -1,5 +1,7 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rufina:wght@400;700&family=Syne:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600;7..72,700&family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500;10..48,600;10..48,700&family=Chivo:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Bricolage+Grotesque:wght@400;500;600;700&display=swap");
 /*
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
@@ -151,8 +153,8 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--heading);
-  font-family: "Roboto Slab", serif;
-  font-weight: 700;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 600;
   line-height: 1.5;
   margin: 0 0 1em 0; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1021,7 +1023,7 @@ section.special, article.special {
   text-align: center; }
 
 header p {
-  font-family: "Roboto Slab", serif;
+  font-family: "Bricolage Grotesque", sans-serif;
   font-size: 1em;
   font-weight: 400;
   letter-spacing: 0.075em;
@@ -1530,7 +1532,7 @@ button,
   color: var(--accent) !important;
   cursor: pointer;
   display: inline-block;
-  font-family: "Roboto Slab", serif;
+  font-family: "Bricolage Grotesque", sans-serif;
   font-size: 0.8em;
   font-weight: 700;
   height: 3.5em;
@@ -2118,7 +2120,7 @@ button,
   #header .logo {
     border-bottom: 0;
     color: inherit;
-    font-family: "Roboto Slab", serif;
+    font-family: "Bricolage Grotesque", sans-serif;
     font-size: 1.5em;
     display: inline-flex;
     align-items: center;
@@ -2239,7 +2241,7 @@ button,
   -ms-user-select: none;
   user-select: none;
   color: var(--th);
-  font-family: "Roboto Slab", serif;
+  font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 400;
   letter-spacing: 0.075em;
   list-style: none;
